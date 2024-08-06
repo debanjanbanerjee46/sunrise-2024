@@ -12,7 +12,7 @@ import Badge from "antd/lib/badge";
 import Task from "@/model/Task";
 import {
   initializeTasks,
-  running_group,
+  
   getTodoTasks,
   getInProgressTasks,
   getCompletedTasks,

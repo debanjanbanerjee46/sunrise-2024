@@ -1,9 +1,9 @@
 import Task from "@/model/Task";
 import { initialTasks } from "@/utils/TaskList";
-import { title } from "process";
+
 
 let tasks: Task[] = [...initialTasks];
-export let running_group = 1;
+let running_group = 1;
 let upcomming = 2;
 export function initializeTasks() {
   return tasks;
@@ -37,7 +37,7 @@ export function getActiveTasks(): Task[] {
 export function getCompletedTasks(): Task[] {
   let arr = tasks.filter((task) => task.completed);
 
-  let taskcom = tasks.filter((task) => task.group == running_group);
+  
   return arr;
 }
 
